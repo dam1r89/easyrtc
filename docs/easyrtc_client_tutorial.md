@@ -390,7 +390,7 @@ second argument to the accept callback.
 
     easyrtc.call(otherEasyrtcId, successCB, failCB, wasAcceptedCB, ["timesSquareCamera"]);
     easyrtc.setAcceptChecker(function(otherGuy, acceptorCallback){
-        acceptorCallback(true, [ "livingRoomCamera", ["kitchenCamera"]);
+        acceptorCallback(true, [ "livingRoomCamera", "kitchenCamera"]);
     });
 
 You can also add a stream to an existing call using easyrtc.addStreamToCall. It takes a stream name
